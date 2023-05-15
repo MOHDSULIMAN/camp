@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="index.html" class="logo"><img src="uploaded_img/logorc.webp" alt="" height="75"></a>
+
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="Reviews.html">Reviews</a>
+                <a href="Camping Equipment.html">Camping Equipment</a>
+                <a href="Furniture.html">Furniture</a>
+                <a href="offers.html">offers and packages</a>
+                <a href="orders.html">orders</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Open discounts code</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>DISCOUNTS CODE</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>You will get 35% if you put this code: RCC35</p>
+                        <p>You will get 50%% if you put this code: CAMPING50</p>
+                        <p>If this your first time on our website you will get 60% discount and free delivery.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>WELCOME TO OUR WEBSITE ,ENJOY YOUR TIME.</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="icons">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+
+            <div class="profile">
+                <p class="name">MOHAMMAD SULIMAN</p>
+                <div class="flex">
+                    <a href="profile.html" class="btn">profile</a>
+                    <a href="#" class="delete-btn">logout</a>
+                </div>
+                <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+            </div>
+
+        </section>
+
+    </header>
+
+
+    <section class="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>order online</span>
+                        <h3>ORANGE TENT</h3>
+                        <a href="Camping Equipment.html" class="btn">see Equipments</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/pic1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>order online</span>
+                        <h3>BLUE SLEEPBAG</h3>
+                        <a href="Camping Equipment.html" class="btn">see Equipments</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/pic2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>order online</span>
+                        <h3> Camping Equipment</h3>
+                        <a href="Camping Equipment.html" class="btn">see Equipments</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/pic3.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/logo.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>why choose RCC?</h3>
+                <p>We have very high quality products, you can also take advantage of the discounts available to us permanently, we also have a free installation service for tents.</p>
+                <a href="Camping Equipment.html" class="btn">our Equipment</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="category">
+
+        <h1 class="title">
+            CAPMING CATEGORY
+        </h1>
+
+        <div class="box-container">
+
+            <a href="Camping Equipment.html" class="box">
+                <img src="images/tent icon.png" alt="">
+                <h3>TENTS</h3>
+            </a>
+
+            <a href="Camping Equipment.html" class="box">
+                <img src="images/bag icon.png" alt="">
+                <h3>SLEEPBAG</h3>
+            </a>
+
+            <a href="Furniture.html" class="box">
+                <img src="images/camp icon.png" alt="">
+                <h3>Furniture</h3>
+            </a>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="products">
+
+        <h1 class="title">latest Products</h1>
+
+        <div class="box-container">
+
+            <form accept="" method="post" class="box">
+                <a href="quick_view.html" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/pic4.png" alt="">
+                <a href="category.html" class="cat">TENTS</a>
+                <div class="name">
+                    Arabest Extra Large Tent
+                </div>
+                <div class="flex">
+                    <div class="price"><span>$</span>300<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="quick_view.html" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/pic5.png" alt="">
+                <a href="category.html" class="cat">TENTS</a>
+                <div class="name">
+                    Instant Pop Up Beach
+                </div>
+                <div class="flex">
+                    <div class="price"><span>$</span>120<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="quick_view.html" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/pic6.png" alt="">
+                <a href="category.html" class="cat">TENTS</a>
+                <div class="name">
+                    Coleman Tent Octagon
+                </div>
+                <div class="flex">
+                    <div class="price"><span>$</span>200<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="quick_view.html" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/pic7.png" alt="">
+                <a href="category.html" class="cat">SLEEPBAG</a>
+                <div class="name">RED SLEEPBAG</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>30<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="quick_view.html" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/pic8.png" alt="">
+                <a href="category.html" class="cat">SLEEPBAG</a>
+                <div class="name">BLUE SLEEPBAG</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>34<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="quick_view.html" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/pic9.png" alt="">
+                <a href="category.html" class="cat"> Camping Equipment</a>
+                <div class="name"> Camping Equipment</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>62<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+        </div>
+
+        <div class="more-btn">
+            <a href="Camping Equipment.html" class="btn">veiw all</a>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+
+        <section class="box-container">
+
+            <div class="box">
+                <img src="images/email-icon.png" alt="">
+                <h3>our email</h3>
+                <a href="mailto:mohdsuliman28@gmail.com">mohdsuliman28@gmail.com</a>
+                <a href="mailto:mohdsuliman28@gmail.com">RCC@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <img src="images/clock-icon.png" alt="">
+                <h3>opening hours</h3>
+                <br />
+                <br />
+                <p>00:07am to 00:10pm </p>
+            </div>
+
+            <div class="box">
+                <img src="images/map-icon.png" alt="">
+                <h3>our address</h3>
+                <br />
+                <br />
+                <a href="https://goo.gl/maps/5ksoSo5rCaaAxJgZ6">ALAIN, UAE - 400104</a>
+            </div>
+
+            <div class="box">
+                <img src="images/phone-icon.png" alt="">
+                <h3>our number</h3>
+                <a href="tel:1234567890">+97156-282-7890</a>
+                <a href="tel:1112223333">+97150-321-1812</a>
+            </div>
+
+        </section>
+
+        <div class="credit">&copy; copyright @ 2023 by <span>MOHAMAD SULIMAN</span> | all rights reserved!</div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".home-slider", {
+            loop: true,
+            grabCursor: true,
+            effect: "flip",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+    </script>
+
+</body>
+</html>
